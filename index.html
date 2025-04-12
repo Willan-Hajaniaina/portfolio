@@ -1,78 +1,36 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Agency</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">MonPortfolio</div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">Shape.</div>
+    <nav class="nav-links">
+      <a href="#">Work</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Culture</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Method</a>
+      <a href="#">Blog</a>
     </nav>
-    <div class="header-content">
-      <h1>Bienvenue sur mon portfolio</h1>
-      <p>Développeur web & créateur de solutions digitales</p>
-    </div>
-  </header>  <section id="about" class="about">
-    <h2>À propos de moi</h2>
-    <img src="profil.jpg" alt="Photo de profil">
-    <p>Je suis un développeur passionné avec de l'expérience en création de sites web modernes et performants.</p>
-  </section>  <section id="services" class="services">
-    <h2>Mes Services</h2>
-    <div class="card">
-      <h3>Création de site vitrine</h3>
-      <p>Des sites professionnels et modernes pour votre présence en ligne.</p>
-    </div>
-    <div class="card">
-      <h3>Sites e-commerce</h3>
-      <p>Solutions de vente en ligne sur mesure avec intégration paiement.</p>
-    </div>
-    <div class="card">
-      <h3>Automatisation</h3>
-      <p>Scripts personnalisés pour gagner du temps et automatiser les tâches répétitives.</p>
-    </div>
-  </section>  <section id="projects" class="projects">
-    <h2>Mes Projets</h2>
-    <div class="card">
-      <img src="project1.jpg" alt="Projet 1">
-      <p>Site vitrine pour un artisan local.</p>
-    </div>
-    <div class="card">
-      <img src="project2.jpg" alt="Projet 2">
-      <p>Boutique en ligne avec système de paiement sécurisé.</p>
-    </div>
-    <div class="card">
-      <img src="project3.jpg" alt="Projet 3">
-      <p>Automatisation de gestion de fichiers dans une entreprise.</p>
-    </div>
-  </section>  <section id="contact" class="contact">
-    <h2>Contactez-moi</h2>
-    <form action="#">
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea placeholder="Votre message" rows="5" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>  <footer>
-    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
-  </footer>  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script></body>
+    <a href="#" class="btn-contact">Contact Us</a>
+  </header>
+<!-- Section Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Web Design Agency<br>in Manchester</h1>
+    <p>Working with brands all over the world</p>
+    <a href="#" class="btn-hero">Find out more</a>
+  </div>
+  <div class="hero-image">
+    <img src="illustration.png" alt="Illustration d'agence" />
+  </div>
+</section>
+</body>
 </html>
