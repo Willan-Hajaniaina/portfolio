@@ -1,49 +1,75 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ton Nom</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
+  <header data-aos="fade-down">
+    <nav class="navbar">
+      <div class="logo">Ton Nom</div>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-  </header>
-
-  <section id="about">
+    <div class="header-content">
+      <h1>Salut, moi c'est Ton Nom</h1>
+      <p>Développeur Web | WordPress | Automatisation</p>
+    </div>
+  </header>  <section id="about" class="about" data-aos="fade-up" style="text-align:center;">
+    <img src="https://via.placeholder.com/200" alt="Photo pro">
     <h2>À propos de moi</h2>
-    <p>Je suis développeur web passionné, spécialisé en HTML, CSS, JS, PHP, et WordPress.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-      <li>HTML / CSS / JS</li>
-      <li>PHP & CodeIgniter</li>
-      <li>WordPress</li>
-      <li>Automatisation de tâches</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Mes projets</h2>
-    <p>Bientôt disponible…</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : ton@email.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 - Mon Nom</p>
-  </footer>
-</body>
+    <p>Passionné par le développement web, je crée des solutions modernes pour les entreprises et entrepreneurs.</p>
+  </section>  <section id="services" data-aos="fade-up">
+    <h2>Mes services</h2>
+    <div class="services">
+      <div class="card" data-aos="zoom-in">
+        <h3>Site vitrine</h3>
+        <p>Création de sites modernes pour présenter votre activité.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>E-commerce</h3>
+        <p>Boutiques en ligne performantes avec paiement sécurisé.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Automatisation</h3>
+        <p>Scripts pour vous faire gagner du temps et améliorer votre productivité.</p>
+      </div>
+    </div>
+  </section>  <section id="projects" data-aos="fade-up">
+    <h2>Projets récents</h2>
+    <div class="projects">
+      <div class="card" data-aos="fade-right">
+        <img src="https://via.placeholder.com/400x200" alt="Projet 1">
+        <h3>Nom du projet 1</h3>
+        <p>Description rapide du projet.</p>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <img src="https://via.placeholder.com/400x200" alt="Projet 2">
+        <h3>Nom du projet 2</h3>
+        <p>Description rapide du projet.</p>
+      </div>
+    </div>
+  </section>  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contactez-moi</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea rows="5" placeholder="Votre message..."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>  <footer data-aos="fade-up">
+    <p>© 2025 Ton Nom - Tous droits réservés</p>
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script></body>
 </html>
